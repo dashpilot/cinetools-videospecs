@@ -5,6 +5,9 @@
   let data = false
   let exclude = ['StreamOrder', 'ID', 'Format_Level', 'Format_Settings_CABAC', 'Format_Settings_RefFrames', 'Encoded_Library_Settings', 'extra']
   
+  let loading = false;
+  let error = false;
+  
   onMount(async () => {
     
     const fileinput = document.getElementById('fileinput')
@@ -14,7 +17,9 @@
   const onChangeFile = (mediainfo) => {
     const file = fileinput.files[0]
     if (file) {
-      // output.value = 'Working…'
+      loading = true;
+      data = false;
+      error = false;
   
       const getSize = () => file.size
   
@@ -33,15 +38,24 @@
       mediainfo
         .analyzeData(getSize, readChunk)
         .then((result) => {
-           data = JSON.parse(result)
-           
-           
           
-       console.log(data.media.track[1])
-          // output.innerHTML = result
+          let myresult = JSON.parse(result);
+          
+          if(myresult.media.track[1]){
+            data = myresult
+             loading = false;
+          }else{
+            error = "Unknown video type"
+            loading = false;
+          }
+           
+       
+          
         })
-        .catch((error) => {
+        .catch((er) => {
           console.log(`An error occured:\n${error.stack}`)
+          error = "An error has occurred";
+          loading = false;
         })
     }
   }
@@ -72,6 +86,19 @@
         <button on:click={selectFile}>Select File</button>
         
  <input type="file" id="fileinput" name="fileinput" style="display: none;" />
+ 
+ 
+
+ {#if loading}
+ <img src="./img/loading.png" class="rotate loading" />
+ {/if}
+ 
+ {#if error}
+ <div class="mt-3">
+ {error}
+ </div>
+ {/if}
+
  
  {#if data}
  {#each data.media.track as item}
