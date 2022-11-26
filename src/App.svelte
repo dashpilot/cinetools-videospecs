@@ -60,7 +60,7 @@
 
 <a href="https://www.instantfilm.net"
   ><img
-    src="./img/logo.png"
+    src="https://www.instantfilm.net/img/videospecs.png"
     id="logo"
 /></a>
 <div class="wrap">
