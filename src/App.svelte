@@ -72,9 +72,9 @@
 </script>
 
 
-<a href="https://www.instantfilm.net"
+<a href="https://www.cinetools.net"
   ><img
-    src="https://www.instantfilm.net/img/videospecs.png"
+    src="https://www.cinetools.net/img/videospecs.png"
     id="logo"
 /></a>
 <div class="wrap">
