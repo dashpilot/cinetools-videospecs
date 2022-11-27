@@ -141,6 +141,22 @@ button {
   display: block;
 }
 
+.info {
+  font-family: "Domine", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 19px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #eee;
+  padding: 15px;
+  background-color: #c1cbd3;
+  color: black;
+  margin-top: 15px;
+  text-align: center;
+  border: 2px solid black;
+}
+
 .rotate {
   animation: rotation 3s infinite linear;
 }

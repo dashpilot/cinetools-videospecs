@@ -88,6 +88,16 @@
  <input type="file" id="fileinput" name="fileinput" style="display: none;" />
  
  
+ {#if !data}
+ <div class="info">
+   
+   Get technical info about your video file, like codec, bitrate, etc.
+   
+ </div>
+ {/if}
+ 
+ 
+ 
 
  {#if loading}
  <img src="./img/loading.png" class="rotate loading" />
