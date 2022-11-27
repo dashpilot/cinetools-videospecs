@@ -90,7 +90,7 @@
 
         
         
-        <button on:click={selectFile}>Select File</button>
+        <button on:click={selectFile}>Select Video File</button>
         
  <input type="file" id="fileinput" name="fileinput" style="display: none;" />
  
