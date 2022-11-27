@@ -84,7 +84,7 @@
         
         <div class="info mb-3">
            
-          Aspect ratio calculator for filmmakers.
+           Get technical info about your video file, like codec, bitrate, etc.
            
          </div>
 
