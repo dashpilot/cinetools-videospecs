@@ -82,7 +82,7 @@
     <div class="wdgt wdgt-main">
       <div class="wdgt-content p-3">
         
-        <div class="info">
+        <div class="info mb-2">
            
            Get technical info about your video file, like codec, bitrate, etc.
            
