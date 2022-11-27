@@ -151,13 +151,13 @@ button {
   font-size: 19px;
   max-width: 600px;
   margin: 0 auto;
-  color: #eee;
   padding: 15px;
-  background-color: #c1cbd3;
-  color: black;
-  margin-top: 15px;
+  background-color: #fff3cd;
+  color: #856404;
+  margin-top: 5px;
   text-align: center;
-  border: 2px solid black;
+  border: 2px solid #856404;
+  border-radius: 4px;
 }
 
 .rotate {

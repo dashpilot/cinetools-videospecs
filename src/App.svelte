@@ -82,20 +82,19 @@
     <div class="wdgt wdgt-main">
       <div class="wdgt-content p-3">
         
+        <div class="info">
+           
+           Get technical info about your video file, like codec, bitrate, etc.
+           
+         </div>
+
+        
         
         <button on:click={selectFile}>Select File</button>
         
  <input type="file" id="fileinput" name="fileinput" style="display: none;" />
  
- 
- {#if !data}
- <div class="info">
-   
-   Get technical info about your video file, like codec, bitrate, etc.
-   
- </div>
- {/if}
- 
+
  
  
 
