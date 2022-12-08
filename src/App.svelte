@@ -74,7 +74,7 @@
 
 <a href="https://www.cinetools.net"
   ><img
-    src="https://www.cinetools.net/img/videospecs.png"
+    src="https://www.cinetools.net/img/banner-videospecs.png"
     id="logo"
 /></a>
 <div class="wrap">
