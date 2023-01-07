@@ -72,7 +72,7 @@
 </script>
 
 
-<a href="https://www.cinetools.net"
+<a href="./../"
   ><img
     src="https://www.cinetools.net/img/cinetools.png"
     id="logo"
