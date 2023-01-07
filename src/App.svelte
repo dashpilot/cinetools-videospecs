@@ -82,7 +82,7 @@
     <div class="wdgt wdgt-main">
       <div class="wdgt-content p-3">
         
-        <div class="info mb-3">
+        <div class="alert alert-warning text-center mb-3">
            
            Get technical info about your video file, like codec, bitrate, etc.
            
@@ -90,7 +90,7 @@
 
         
         
-        <button on:click={selectFile}>Select Video File</button>
+        <button on:click={selectFile} class="btn btn-dark w-50 d-block m-auto">Select Video File</button>
         
  <input type="file" id="fileinput" name="fileinput" style="display: none;" />
  
@@ -122,8 +122,8 @@
      
      {#if !exclude.includes(key)}
      <tr>
-       <th scope="row" class="w-50">{key.replaceAll('_', ' ')}</th>
-       <td class="text-end"><span style="display: inline-block; max-width: 140px; overflow: hidden;">{item[key]}</span></td>
+       <th scope="row" class="w-50 text-capitalize">{key.replaceAll('_', ' ')}</th>
+       <td class="text-truncate">{item[key]}</td>
      </tr>
      {/if}
      {/each}
