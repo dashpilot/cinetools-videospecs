@@ -60,10 +60,10 @@
     }
   }
   
-  MediaInfo({ format: 'JSON' }, (mediainfo) => {
+  MediaInfo({ format: 'JSON', locateFile: (path, prefix) => prefix + path}, (mediainfo) => {
     fileinput.addEventListener('change', () => onChangeFile(mediainfo))
   })
-  
+ 
   });
   
   function selectFile(){
