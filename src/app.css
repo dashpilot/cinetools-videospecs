@@ -164,6 +164,18 @@ button {
   animation: rotation 3s infinite linear;
 }
 
+h5 {
+  margin-left: 12px;
+  margin-top: 50px;
+  font-weight: 600;
+}
+
+h5 a,
+h5 a:hover {
+  text-decoration: none;
+  color: white;
+}
+
 @keyframes rotation {
   from {
     transform: rotate(0deg);

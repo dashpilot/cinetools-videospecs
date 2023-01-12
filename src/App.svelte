@@ -71,12 +71,16 @@
   }
 </script>
 
-
+<!--
 <a href="./../"
   ><img
     src="https://www.cinetools.net/img/cinetools.png"
     id="logo"
 /></a>
+-->
+
+<div class="text-center"><h5><a href="https://www.clipflare.com">ClipFlare VideoSpecs</a></h5></div>
+
 <div class="wrap">
   <main id="main">
     <div class="wdgt wdgt-main">
@@ -90,7 +94,7 @@
 
         
         
-        <button on:click={selectFile} class="btn btn-dark w-50 d-block m-auto">Select Video File</button>
+        <button on:click={selectFile} class="btn btn-dark w-50 d-block m-auto mb-3">Select Video File</button>
         
  <input type="file" id="fileinput" name="fileinput" style="display: none;" />
  
