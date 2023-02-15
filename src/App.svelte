@@ -79,7 +79,7 @@
 /></a>
 -->
 
-<div class="text-center"><h5><a href="https://www.clipflare.com">Clip Detective</a></h5></div>
+<div class="text-center"><h5><a href="https://www.clipflare.com">VideoSpecs</a></h5></div>
 
 <div class="wrap">
   <main id="main">
